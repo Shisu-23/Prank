@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BATI MO NA ME?</title>
+  <link rel="stylesheet" href="style .css">
+</head>
+<body>
+  <!-- Popup video modal -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <h2 id="popupText">ALAM KO NAMAAANNN!!!</h2>
+      <video id="prankMedia" preload="auto" loop controls>
+        <source src="tagumpay.mp4" type="video/mp4">
+      </video>
+      <video id="noVideo" style="display:none;" controls>
+     <source src="no.mp4" type="video/mp4">
+   </video>
+
+    <video id="maybeVideo" style="display:none;" controls>
+  <source src="maybe.mp4" type="video/mp4">
+   </video>
+      <br>
+      <button class="close-video" id="closeVideo">Close</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="card" role="main" aria-labelledby="page-title">
+      <h1 id="page-title">BATI MO NA'KO BOSS ??</h1>
+
+      <div class="image-area" id="imageArea">
+        <div class="image-overlay"></div>
+      </div>
+
+      <div class="btn-row" role="group" aria-label="answers">
+        <button class="btn" id="yesBtn">Yes</button>
+        <button class="btn" id="noBtn">No</button>
+        <button class="btn" id="maybeBtn">Maybe</button>
+      </div>
+
+      <div class="response" id="responseText">ALAM KO NAMAAANNN!!!</div>
+
+      <!-- Hidden video/audio element -->
+      <video id="hiddenMedia" style="display:none" preload="auto" loop>
+        <source src="tagumpay.mp4" type="video/mp4">
+      </video>
+
+      <div style="margin-top:12px">
+        <button class="close-video" id="closeHidden" style="display:none">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script .js"></script>
+</body>
+</html>
